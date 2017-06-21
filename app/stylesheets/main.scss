@@ -1,0 +1,16 @@
+.page-header {
+  margin-top: -1.4rem;
+  height: 4rem;
+  padding: 0.5rem 0;
+  background-color: cadetblue;
+  box-shadow: 3px 3px 3px 3px lighten(cadetblue, 20%);
+
+  h1 {
+    margin-left: 4rem;
+  }
+}
+
+main {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+}

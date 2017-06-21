@@ -1,0 +1,21 @@
+doctype html
+html.no-js lang="en"
+  head
+    meta charset="utf-8" /
+    meta content="ie=edge" http-equiv="x-ua-compatible" /
+    title GeoCode Me
+    meta content="simple geocoding app" name="description" /
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    link href="stylesheets/normalize.css" rel="stylesheet" /
+    link href="stylesheets/html5bp.css" rel="stylesheet" /
+    link href="stylesheets/font-awesome.css" rel="stylesheet" /
+    link href="stylesheets/main.css" rel="stylesheet" /
+  body
+    /![if lte IE 9]
+      | <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p
+    header.page-header
+      h1 Geocode Me
+
+    main
+      = yield
+
