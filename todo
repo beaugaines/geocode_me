@@ -1,0 +1,4 @@
+- handle error response from api
+- fa spinner while waiting for response from api
+- fix sequel deprecation warning
+- refactor js

@@ -1,3 +1,17 @@
 h3
   i.fa.fa-globe
-  | &nbsp; Add your address and we will geolocate you for no fee!
+  | &nbsp; Add your address and we will geolocate you for free!
+
+= form_for @location, '/locations', class: 'location-form' do |f|
+  = f.error_messages
+
+  = f.hidden_field :formatted_address
+  = f.hidden_field :lat
+  = f.hidden_field :lng
+  = f.text_field :location, class: 'user-location'
+
+  = field_set_tag(class: 'mt1') do
+     = f.submit 'Submit'
+
+- if @locations.any?
+  #locations= partial 'location', collection: @locations

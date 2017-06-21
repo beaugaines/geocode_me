@@ -10,12 +10,17 @@ html.no-js lang="en"
     link href="stylesheets/html5bp.css" rel="stylesheet" /
     link href="stylesheets/font-awesome.css" rel="stylesheet" /
     link href="stylesheets/main.css" rel="stylesheet" /
+    = javascript_include_tag :geocode
   body
+    div.api-key data-apikey="#{@api_key}"
     /![if lte IE 9]
       | <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p
     header.page-header
       h1 Geocode Me
 
     main
+      = if flash.any?
+      - flash.each do |k,v|
+        div.flash= v
       = yield
 

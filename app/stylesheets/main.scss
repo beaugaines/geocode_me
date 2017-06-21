@@ -14,3 +14,35 @@ main {
   margin-top: 1rem;
   padding: 1rem 3rem;
 }
+
+.mt1 {
+  margin-top: 1rem;
+}
+
+input[type=text] {
+  padding: 0.3rem;
+}
+
+input[type=submit] {
+  padding: 0.4rem;
+}
+
+.location-form input[type=text] {
+  width: 15rem;
+}
+
+@keyframes fadeOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.flash {
+  height: 2rem;
+  background-color: lighten(red, 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 4000ms ease-in 0s 1 forwards;
+}

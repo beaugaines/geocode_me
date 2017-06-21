@@ -10,6 +10,7 @@ gem 'slim'
 gem 'sqlite3'
 gem 'sequel'
 gem 'dotenv'
+gem 'pry'
 gem 'rspec', :group => 'test'
 gem 'rack-test', :require => 'rack/test', :group => 'test'
 
