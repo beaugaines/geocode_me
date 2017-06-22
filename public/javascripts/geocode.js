@@ -18,8 +18,8 @@
 
       fetch(requestURL)
         .then((resp) => {
+          spinner.style.display = 'none';
           if (!resp.ok) {
-            spinner.style.display = 'none';
             let errorMsg = document.createElement('span');
             errorMsg.classList.add('flash');
             errorMsg.innerHTML = 'Invalid input!';
