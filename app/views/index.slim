@@ -12,6 +12,8 @@ h3
 
   = field_set_tag(class: 'mt1') do
      = f.submit 'Submit'
+     span.api-progress
+       i.fa.fa-spin.fa-circle-o-notch
 
 - if @locations.any?
   #locations= partial 'location', collection: @locations

@@ -7,9 +7,11 @@
     const addressField = document.querySelector('#location_formatted_address');
     const latField = document.querySelector('#location_lat');
     const lngField = document.querySelector('#location_lng');
+    const spinner = document.querySelector('.api-progress');
 
     geoForm.addEventListener('submit', (event) => {
       event.preventDefault();
+      spinner.style.display = 'inline';
       let userAddress = document.querySelector('.user-location').value;
       userAddress = userAddress.replace(/[^\w,\s]/g, '').replace(/\s+/g, '+');
       const requestURL = `${BASE_URI}?address=${userAddress}&key=${API_KEY}`;
@@ -17,6 +19,7 @@
       fetch(requestURL)
         .then((resp) => {
           if (!resp.ok) {
+            spinner.style.display = 'none';
             let errorMsg = document.createElement('span');
             errorMsg.classList.add('flash');
             errorMsg.innerHTML = 'Invalid input!';

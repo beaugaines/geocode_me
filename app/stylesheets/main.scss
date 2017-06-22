@@ -25,10 +25,22 @@ input[type=text] {
 
 input[type=submit] {
   padding: 0.4rem;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 4px #ccc;
+  }
 }
 
 .location-form input[type=text] {
   width: 15rem;
+}
+
+.api-progress {
+  display: none;
+  margin-left: 1rem;
+  color: #D4771C;
+  font-size: 1.3rem;
 }
 
 @keyframes fadeOut {

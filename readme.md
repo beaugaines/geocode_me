@@ -10,5 +10,4 @@
 4. In terminal, run `padrino s` and visit the app at `localhost:3000`
 
 ## Todo
-- fa spinner while waiting for response from api
 - fix sequel deprecation warning
