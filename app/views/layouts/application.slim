@@ -10,7 +10,7 @@ html.no-js lang="en"
     link href="stylesheets/html5bp.css" rel="stylesheet" /
     link href="stylesheets/font-awesome.css" rel="stylesheet" /
     link href="stylesheets/main.css" rel="stylesheet" /
-    = javascript_include_tag :geocode
+    = javascript_include_tag :geocode, async: true
   body
     div.api-key data-apikey="#{@api_key}"
     /![if lte IE 9]
